@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title>{{ title }} - Quản lý trang thiết bị CNTT</title>
+    {% else %}
+    <title>Quản lý trang thiết bị CNTT - Bệnh viện Ung bướu tỉnh Thanh Hóa</title>
+    {% endif %}
+</head>
+<body>
+    <div>Quản lý TTB CNTT <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
